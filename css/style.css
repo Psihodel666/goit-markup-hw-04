@@ -125,6 +125,8 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .top-main h1 {
   color: var(--main-title-color);
@@ -272,6 +274,9 @@ ul {
   display: flex;
   justify-content: center;
 }
+.wrap-us-team-icon li + li {
+  margin-left: 10px;
+}
 .wrap-us-team-icon svg {
   fill: #afb1b8;
 }
@@ -283,11 +288,14 @@ ul {
   height: 44px;
   border-radius: 50%;
 }
-.wrap-us-team-icon a:hover {
+.wrap-us-team-icon a:hover,
+.wrap-us-team-icon a:focus {
   background-color: #2196f3;
   transition: 700ms;
 }
-.wrap-us-team-icon a:hover svg {
+
+.wrap-us-team-icon a:hover svg,
+.wrap-us-team-icon a:focus svg {
   fill: #fff;
   transition: 700ms;
 }
@@ -317,10 +325,16 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.us-clients-container li:hover svg {
+.us-clients-container li:hover svg,
+.us-clients-container a:focus svg {
   transition: 700ms;
   fill: #2196f3;
 }
+ {
+  transition: 700ms;
+  fill: #2196f3;
+}
+
 .us-clients-container svg {
   fill: #afb1b8;
 }
@@ -381,6 +395,15 @@ ul {
   background: #fff;
   border: 1px solid #eeeeee;
 }
+.portfolio-card a {
+  text-decoration: none;
+}
+.portfolio-card:hover,
+.portfolio-card:focus {
+  transition: 250ms;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-card img {
   display: block;
   max-width: 100%;
@@ -415,6 +438,7 @@ ul {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer h2 {
   margin-bottom: 20px;
@@ -450,9 +474,7 @@ address ul li a:focus:focus {
   color: #fff;
 }
 .footer-box-link {
-  margin-top: 12px;
   margin-left: 70px;
-  width: 206px;
 }
 .footer-box-link p {
   color: var(--main-title-color);
@@ -463,8 +485,10 @@ address ul li a:focus:focus {
 }
 .footer-conteiner-link {
   display: flex;
-  justify-content: space-between;
   margin-top: 20px;
+}
+.footer-conteiner-link li + li {
+  margin-left: 10px;
 }
 .footer-conteiner-link a {
   display: flex;
@@ -475,7 +499,8 @@ address ul li a:focus:focus {
   height: 44px;
   border-radius: 50%;
 }
-.footer-conteiner-link a:hover {
+.footer-conteiner-link a:hover,
+.footer-conteiner-link a:focus {
   background-color: #2196f3;
   transition: 700ms;
 }
