@@ -325,6 +325,9 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
+.us-clients-container li:hover {
+  border-color: #2196f3;
+}
 .us-clients-container li:hover svg,
 .us-clients-container a:focus svg {
   transition: 700ms;
